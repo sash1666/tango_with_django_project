@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% load staticfiles %} <!-- New line -->
+
+<html>
+
+	<head>
+		<title>Unicorn</title>
+	</head>
+	<body>
+		<h1>Unicorn says...</h1>
+		<div>
+			hey there! <br />
+			<strong>{{ variable_name }}</strong><br />
+		</div>
+		<div>
+			<a href="/rango/">Index</a><br />
+			<img src="{% static 'images/unicorn.png' %}"
+				alt="Picture of unicorn" /> 
+		</div>
+	</body>
+
+</html>
